@@ -209,7 +209,9 @@ a:hover {
 .footer-caption {
     margin-top: 40px;
     color : #FFA500;
-    text-shadow: 2px 2px 4px black;
+    text-shadow: 4px 2px 8px black;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: white;
 }
 @keyframes typing {
     from{width: 0}
