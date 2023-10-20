@@ -1,0 +1,244 @@
+body {
+    font-size: 72px;
+    font-family: 'Roboto', Courier, monospace;
+    background: linear-gradient(to bottom , rgba(138, 199, 219,0.4) , rgba(138, 199, 219,0.2)) ;
+}
+
+.container {
+    max-width: 1280px;
+    box-sizing: border-box;
+    margin : 0px auto;
+    padding : 0px 24px;
+    width: 100%;
+}
+
+.header {
+    background-color: white;
+    padding: 5px;
+    border-bottom-width: 4px;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-style: solid;
+    border-color: #4169E1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left : 0;
+    z-index : 1000;
+}
+
+.Name {
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 36px;
+    animation-name: fade-intro;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+}
+
+.header-list {
+    display : flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.nav-item {
+    margin-left: 24px;
+    font-size: 18px;
+    transition: all 0.5s;
+    animation-name: fade-intro;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+}
+
+a {
+    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+    transition: text-decoration-color 300ms;
+}
+  
+a:hover {
+    text-decoration-color: rgba(0, 0, 0, 1);
+}
+
+#nav-1 {
+    animation-delay: 0s;
+}
+
+#nav-2 {
+    animation-delay: 0.05s;
+}
+
+#nav-3 {
+    animation-delay: 0.1s;
+}
+
+#nav-4 {
+    animation-delay: 0.15s;
+}
+.nav-item:hover {
+    font-size : 24px;
+    text-shadow : 2px 2px 5px #4169E1;
+}
+
+.content-container {
+    border : 3px solid black;
+    min-height: 800px;
+    margin: 20px;
+    margin-top: 120px;
+    background-image: linear-gradient(to right , rgba(255, 165, 0,0.7) , rgba(255, 165, 0,0.2));
+    transition: all 0.5s ease-in-out;
+    font-size : 30px;
+    padding: 20px;
+    font-weight: 500;
+    text-shadow: 0.5px 0.5px white;
+}
+.subject {
+    color: white;
+    text-shadow: 1.5px 1.5px #4169E1;
+}
+.content-container:hover {
+    transform: scale(1.1);
+    box-shadow: 7px 5px 5px black;
+}
+
+.About-me-text {
+    color : #4169E1;
+    text-shadow: 3px 3px white;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.Skills-text {
+    color : #4169E1;
+    text-shadow: 3px 3px white;
+    font-weight: bold;
+    animation : blink-caret .75s step-end infinite;
+    border : 4px solid white;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-left: 0px;
+    width: fit-content;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-areas: 
+    "C CPP CS"
+    "HTML CSS JS"
+    "PY PANDAS AI";
+    min-height: 900px;
+    color : rgb(255, 165, 0);
+    text-shadow: 3px 3px black;
+    column-gap: 10px;
+    row-gap: 10px;
+    max-width: 1200px;
+    background-image: linear-gradient(to right , aqua , white);
+    border-radius: 16px;
+    border : 4px solid black;
+    padding: 20px;
+    font-size: 64px;
+    margin : 40px 0px;
+}
+
+.skill-image {
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    border : 4px solid #4169E1;
+    transition: all 0.5s ease-in; 
+    padding : 10px
+}
+
+.grid-item {
+    margin: 10px 50px;
+}
+
+.skill-image:hover {
+    transform: scale(1.1);
+    box-shadow: 7px 5px 5px black;
+}
+
+.skill-grid-1 {
+    grid-area: C;
+}
+
+.skill-grid-2 {
+    grid-area: CPP;
+}
+
+.skill-grid-3 {
+    grid-area: CS;
+}
+
+.skill-grid-4 {
+    grid-area: HTML;
+}
+
+.skill-grid-5 {
+    grid-area: CSS;
+}
+
+.skill-grid-6 {
+    grid-area: JS;
+}
+
+.skill-grid-7 {
+    grid-area: PY;
+}
+
+.skill-grid-8 {
+    grid-area: PANDAS;
+}
+
+.skill-grid-9 {
+    grid-area: AI;
+}
+
+@keyframes typing {
+    from{width: 0}
+    to {width: 100%}
+
+}
+
+@keyframes blink-caret {
+    from , to{border-color : transparent}
+    50%{border-color :	orange}
+}
+
+@keyframes fade-intro {
+    from {
+        transform: translateX(-10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-introY {
+    from {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+

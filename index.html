@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GGital's Portfolio</title>
+    <link rel="stylesheet" href="styles\reset.css">
+    <link rel="stylesheet" href="styles\particle.css">
+    <link rel="stylesheet" href="styles\main.css">
+    <link rel="icon" href="./images/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Signika:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-list">
+            <h1 class = "Name">GGital</h1>
+            <ul class = "nav-list">
+                <li class = "nav-item" id = "nav-1"><a href="index.html">Home</a></li>
+                <li class = "nav-item" id = "nav-2"><a href=Game.html>Game</a></li>
+                <li class = "nav-item" id = "nav-3"><a href="Portfolio.html">Portfolio</a></li>
+                <li class = "nav-item" id = "nav-4"><a href="About_me.html">About me</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class = 'hero-section'>
+        <h1 class = 'hero-text'>My dream as Developer is awaiting.</h1>
+    </div>
+    <div class = 'gradient-background'>
+        <div class = 'container'>
+            <div class = 'content-container'>
+                <div class = 'content-box'>
+                    <div class = 'flex-content'>
+                        <h1 class = "content-title">TOI 19</h1>
+                        <p class = "content-text">I have been one of the contesters in TOI 19 which is the biggest Thai competitive programming contest.
+                            In order to participate in this contest, I have to become top 5 in my POSN centre,Samsenwittayalai School, which takes
+                            a huge amount of time to pratice my competitive programming skill in such a limited time. As a result of the contest, I managed to become one of the Bronze medalists out of 90 participants.
+                            This achievement is the proudest success which is able to ensure my talent in learning programming.
+                        </p>
+                    </div>
+                    <img class = 'content-image' src = "images/TOI19.jpg">
+                </div>
+                <div class = 'content-box'>
+                    <div class = 'flex-content'>
+                        <h1 class = "content-title">NSC 25</h1>
+                        <p class = "content-text">I participated in NSC 25 which is one of the most popular annual competition focusing on computer programming and software development skills
+                            in topic of general-using program. My team ideated the project named Scam Buster with the purpose to distinguish scammers in online world by using various datas
+                            about online scamming records.The project was successfully deployed in Android OS and we managed to get into final rounds of this competition.
+                            As a result of long-time development, I have learnt many things, More than just usual programming, about using API and have had first touch with Front-End works.</p>
+                    </div>
+                    <img class = 'content-image' src = "images/NSC_2.jpg">
+                </div>
+                <div class = 'content-box'>
+                    <div class = 'flex-content'>
+                        <h1 class = "content-title">Various interests in computer field</h1>
+                        <p class = "content-text">Not only competitive programming and Back-End development that I have interest in but many things such as 
+                            AI Development, Game Development, Front-End Development and Data Science also got my eyes on. After knowing about these interests,
+                            I am no hesitate to start my learning path on every of them to find the best fit for me. In the end, I found that I love to do all of them
+                            them with some greater attentiveness on Game Development since it is my first step on my way as developer. 
+                        </p>
+                    </div>
+                    <img class = 'content-image' src = "images/Various.PNG">
+                </div>
+                <div class = "bottom-particles">
+                    <div class = "bubble"></div>
+                    <div class = "bubble"></div>
+                    <div class = "bubble"></div>
+                    <div class = "bubble"></div>
+                    <div class = "bubble"></div>
+                    <div class = "bubble"></div>
+                    <div class = "bubble"></div>
+                    <div class = "bubble"></div>
+                    <div class = "bubble"></div>
+                    <div class = "bubble"></div>
+                    <div class = "bubble"></div>
+                    <div class = "bubble"></div>
+                    <div class = "bubble"></div>
+                    <div class = "bubble"></div>
+                    <div class = "bubble"></div>
+                    <div class = "bubble"></div>
+                    <div class = "bubble"></div>
+                    <div class = "bubble"></div>
+                    <div class = "bubble"></div>
+                    <div class = "bubble"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class = 'footer'>
+        <div class = 'footer-flex'>
+            <ul class = 'footer-images-list'>
+                <li class = 'footer-image'><img src="images/Footer1.PNG"></li>
+                <li class = 'footer-image'><img src = "images/Footer2.PNG"></li>
+                <li class = 'footer-image'><img src = "images/Footer3.jpg"></li>
+                <script>
+                    // Get the element you want to animate
+                    const elements = document.querySelectorAll('.footer-image');
+
+                    // Set up the Intersection Observer with a threshold of 0.5
+                    const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                        // Add the CSS class to trigger the animation
+                        elements.forEach(element => {
+                            element.classList.add('fade-introY');
+                        });
+                        // Unobserve the element to stop observing once the animation is triggered
+                        observer.disconnect();
+                        }
+                    });
+                    }, { threshold: 0.5 });
+
+                    // Start observing the element
+                    elements.forEach(element => {
+                        observer.observe(element);
+                    });
+                </script>
+            </ul>
+            <h1 class = 'footer-caption'>Believe you can and you're halfway there.</h1>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,247 @@
+body {
+    font-size: 72px;
+    font-family: 'Roboto', Courier, monospace;
+    background: linear-gradient(to bottom , rgba(138, 199, 219,0.4) , rgba(138, 199, 219,0.2)) ;
+}
+
+.container {
+    max-width: 1280px;
+    box-sizing: border-box;
+    margin : 0px auto;
+    padding : 0px 24px;
+    width: 100%;
+}
+
+.header {
+    background-color: white;
+    padding: 5px;
+    border-bottom-width: 4px;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-style: solid;
+    border-color: #4169E1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left : 0;
+    z-index : 1000;
+}
+
+.Name {
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 36px;
+    animation-name: fade-intro;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+}
+
+.header-list {
+    display : flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.nav-item {
+    margin-left: 24px;
+    font-size: 18px;
+    transition: all 0.5s;
+    animation-name: fade-intro;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+}
+
+a {
+    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+    transition: text-decoration-color 300ms;
+}
+  
+a:hover {
+    text-decoration-color: rgba(0, 0, 0, 1);
+}
+
+#nav-1 {
+    animation-delay: 0s;
+}
+
+#nav-2 {
+    animation-delay: 0.05s;
+}
+
+#nav-3 {
+    animation-delay: 0.1s;
+}
+
+#nav-4 {
+    animation-delay: 0.15s;
+}
+.nav-item:hover {
+    font-size : 24px;
+    text-shadow : 2px 2px 5px #4169E1;
+}
+
+.hero-section {
+    padding-top : 128px;
+    height : 480px;
+    background-size: cover;
+    background-position: center center;
+    background-image: linear-gradient(to right , rgba(65,105,225,0.15) , rgba(255,255,255,0.5)) , url("../images/Hero_Banner.jpg");
+    border-bottom-width: 4px;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-style: solid;
+    border-color: #4169E1;
+}
+
+.hero-text {
+    color : black;
+    text-shadow: 3px 3px 	#FFA500;
+    padding-left: 120px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right : .15em solid 	#FFA500;
+    max-width: fit-content;
+    animation :
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+
+.content-box {
+    margin-top : 48px;
+    height: 480px;
+    width: 100%;
+    border-radius: 16px;
+    border-color: black;
+    border-style: solid;
+    border-width: 4px;
+    padding : 20px;
+    display : flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to right , rgba(255, 165, 0,0.7) , rgba(255, 165, 0,0.2));
+    transition: all 0.5s ease-in-out;    
+}
+
+.content-box:hover {
+    transform: scale(1.1);
+    box-shadow: 7px 5px 5px black;
+}
+
+.content-image {
+    min-width: 200px;
+    box-shadow: 7px 7px 5px lightblue;
+    border-radius: 8px;
+    border: 2.75px solid #4169E1;
+}
+
+.content-title {
+    font-size: 48px;
+    font-weight: 600;
+    text-shadow: 2px 2px white;
+    
+}
+
+.content-text {
+    margin-top: 8px;
+    font-size : 24px;
+    font-weight: 400;
+}
+
+.flex-content {
+    display : flex;
+    flex-direction: column;
+    max-width: 50%;
+}
+
+
+.footer {
+    height : 480px;
+    margin-top: 120px;
+    border-color: #FFA500;
+    border-style: solid;
+    border-width: 4px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    padding : 20px;
+    background: linear-gradient(to top , rgba(138, 199, 219,0.5) , rgba(138, 199, 219,0.2)) ;
+}
+
+.footer-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.footer-images-list {
+    display: flex;
+    justify-content: space-around;
+    align-items : center;
+}
+
+.footer-image {
+    margin-left : 40px;
+    height: 300px;
+    width : 400px;
+    border : 3px solid white;
+    border-radius: 16px;
+    box-shadow: 0px 0px 40px 20px white;
+
+}
+.fade-introY {
+    animation: fade-introY 1s ease-in;
+}
+
+.footer-caption {
+    margin-top: 40px;
+    color : #FFA500;
+    text-shadow: 2px 2px 4px black;
+}
+@keyframes typing {
+    from{width: 0}
+    to {width: 100%}
+
+}
+
+@keyframes blink-caret {
+    from , to{border-color : transparent}
+    50%{border-color :	#4169E1}
+}
+
+@keyframes fade-intro {
+    from {
+        transform: translateX(-10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-introY {
+    from {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
