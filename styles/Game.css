@@ -1,0 +1,113 @@
+body {
+    font-size: 72px;
+    font-family: 'Roboto', Courier, monospace;
+    background: linear-gradient(to bottom , rgba(138, 199, 219,0.4) , rgba(138, 199, 219,0.2)) ;
+}
+
+.container {
+    max-width: 1280px;
+    box-sizing: border-box;
+    margin : 0px auto;
+    padding : 0px 24px;
+    width: 100%;
+}
+
+.header {
+    background-color: white;
+    padding: 5px;
+    border-bottom-width: 4px;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-style: solid;
+    border-color: #4169E1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left : 0;
+    z-index : 1000;
+}
+
+.header-list {
+    display : flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.nav-item {
+    margin-left: 24px;
+    font-size: 18px;
+    transition: all 0.5s;
+    animation-name: fade-intro;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+}
+
+a {
+    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+    transition: text-decoration-color 300ms;
+}
+  
+a:hover {
+    text-decoration-color: rgba(0, 0, 0, 1);
+}
+
+#nav-1 {
+    animation-delay: 0s;
+}
+
+#nav-2 {
+    animation-delay: 0.05s;
+}
+
+#nav-3 {
+    animation-delay: 0.1s;
+}
+
+#nav-4 {
+    animation-delay: 0.15s;
+}
+.nav-item:hover {
+    font-size : 24px;
+    text-shadow : 2px 2px 5px #4169E1;
+}
+
+.Name {
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 36px;
+    animation-name: fade-intro;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+}
+
+#unity-container {
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+.controls {
+    margin-top : 800px;
+    height: 300px;
+    margin-bottom : 100px;
+    border: 4px solid black;
+    border-radius: 16px;
+    background-color: aqua;
+}
+
+.controls-text {
+    color : yellowgreen;
+    text-shadow: 4px 2px 8px white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}

@@ -2,12 +2,30 @@
 <html lang="en-us">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Idia WorkShop</title>
+    <title>GGital's Portfolio</title>
+    <link rel="stylesheet" href="styles\reset.css">
+    <link rel="stylesheet" href="styles\particle.css">
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="stylesheet" href="styles/Game.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Signika:wght@400;600;700&display=swap" rel="stylesheet">
   </head>
   <body>
+    <header class="header">
+      <div class="header-list">
+          <h1 class = "Name">GGital</h1>
+          <ul class = "nav-list">
+              <li class = "nav-item" id = "nav-1"><a href="index.html">Home</a></li>
+              <li class = "nav-item" id = "nav-2"><a href=Game.html>Game</a></li>
+              <li class = "nav-item" id = "nav-3"><a href="Portfolio.html">Portfolio</a></li>
+              <li class = "nav-item" id = "nav-4"><a href="About_me.html">About me</a></li>
+          </ul>
+      </div>
+  </header>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
@@ -20,8 +38,12 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Idia WorkShop</div>
+        <div id="unity-build-title">Maze Runner</div>
       </div>
+    </div>
+    <div class = 'container controls'>
+      <h1 class = 'controls-text'>Controls : </h1>
+      <p class = 'controls-text'> W - A - S - D to move! <br>Space to become invisble to enemies!</p>
     </div>
     <script>
 
@@ -118,5 +140,27 @@
       document.body.appendChild(script);
 
     </script>
+    <div class = "bottom-particles">
+      <div class = "bubble"></div>
+      <div class = "bubble"></div>
+      <div class = "bubble"></div>
+      <div class = "bubble"></div>
+      <div class = "bubble"></div>
+      <div class = "bubble"></div>
+      <div class = "bubble"></div>
+      <div class = "bubble"></div>
+      <div class = "bubble"></div>
+      <div class = "bubble"></div>
+      <div class = "bubble"></div>
+      <div class = "bubble"></div>
+      <div class = "bubble"></div>
+      <div class = "bubble"></div>
+      <div class = "bubble"></div>
+      <div class = "bubble"></div>
+      <div class = "bubble"></div>
+      <div class = "bubble"></div>
+      <div class = "bubble"></div>
+      <div class = "bubble"></div>
+  </div>
   </body>
 </html>
