@@ -250,3 +250,40 @@ a:hover {
     border: #4169E1 solid 2px;
     box-shadow : 5px 5px 5px white;
 }
+
+
+@media screen and (max-width : 1024px) {
+    .skills-grid {
+        display : flex;
+        flex-direction: column;
+        padding : 0px;
+        font-size : 40px
+    }
+
+    .grid-item {
+        margin : 10px auto;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .nav-item {
+        font-size : 16px;
+        margin-left: 12px;
+    }
+
+    .container {
+        width: 100vw;
+    }
+
+    .content-container {
+        margin : 20px 5px;
+        font-size : 24px;
+        flex-direction: column-reverse;
+    }
+
+    .map {
+        width : 100% 
+    }
+}
